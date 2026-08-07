@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lville Labs | Software Development Studio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <img src="assets/logo.jpg" alt="Lville Labs Logo" class="logo">
-    <nav>
+    
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="navMenu">
       <a href="#featured">Featured App</a>
       <a href="#services">Services</a>
       <a href="#web-portfolio">Client Work</a>
@@ -20,23 +27,23 @@
   </header>
 
   <main>
+    <!-- HERO SECTION -->
     <section class="hero">
-    <img src="assets/lvillelabslogo.png" alt="Lville Labs Logo">
+      <img src="assets/lvillelabslogo.png" alt="Lville Labs Logo">
       <h1>Modern Software & Mobile Solutions Built to Scale</h1>
-      <p>We engineer custom cross-platform mobile apps, high-performance web platforms, and digital products designed for performance, scalability, and seamless user experiences.</p>
-        <div class="hero-actions">
+      <p>We build custom apps, websites, and software platforms that transform ideas into scalable digital products for creators, organizations, and innovators.</p>
+      <div class="hero-actions">
         <a href="#contact" class="cta">Start Your Project</a>
         <a href="#featured" class="cta-secondary">Explore Our Work</a>
-  </div>
-
+      </div>
     </section>
 
-    <!-- SECTION 1: Featured Flagship App with Gameplay Video -->
+    <!-- SECTION 1: Featured Flagship App -->
     <section id="featured" class="portfolio-section featured-app-section">
       <div class="featured-header">
         <span class="badge flagship-badge">Just Launched</span>
         <h2>Featured Product</h2>
-        <span class="badge">Flagship Mobile Application</span>
+        <span class="badge">Lville Labs Original • Mobile Application</span>
       </div>
 
       <div class="app-showcase-card">
@@ -56,7 +63,7 @@
             </div>
           </div>
 
-          <p>A competitive typing game built by Lville Labs featuring accuracy tracking, daily challenges, and real-time skill scoring</p>
+          <p>A competitive typing game experience built by Lville Labs featuring accuracy tracking, daily challenges, and real-time skill scoring</p>
 
           <!-- Store Badges -->
           <div class="download-badges">
@@ -81,58 +88,60 @@
       </div>
     </section>
 
-    <!-- SECTION 2: Web Client Work -->
-    <!-- SERVICES SECTION -->
+    <!-- SECTION 2: Services -->
     <section id="services" class="services-section">
-    <div class="section-header">
+      <div class="section-header">
         <span class="badge">Our Services</span>
         <h2>What We Build</h2>
         <p>End-to-end software engineering and digital product development designed to bring innovative ideas to life</p>
-    </div>
+      </div>
 
-    <div class="services-grid">
+      <div class="services-grid">
         <div class="service-card">
-        <div class="service-icon">📱</div>
-        <h3>Mobile App Development</h3>
-        <p>Cross-platform iOS and Android applications built with Flutter for native performance, smooth animations, and unified codebases</p>
+          <div class="service-icon">📱</div>
+          <h3>Mobile App Development</h3>
+          <p>Cross-platform iOS and Android applications built with Flutter for native performance, smooth animations, and unified codebases</p>
         </div>
 
         <div class="service-card">
-        <div class="service-icon">💻</div>
-        <h3>Custom Websites</h3>
-        <p>High-converting, responsive websites engineered for speed, clean SEO architecture, and seamless user experiences across all devices</p>
+          <div class="service-icon">💻</div>
+          <h3>Custom Websites</h3>
+          <p>High-converting, responsive websites engineered for speed, clean SEO architecture, and seamless user experiences across all devices</p>
         </div>
 
         <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3>Web Applications</h3>
-        <p>Scalable web platforms and portals designed to handle complex logic, custom workflows, and dynamic user data</p>
+          <div class="service-icon">⚙️</div>
+          <h3>Web Applications</h3>
+          <p>Scalable web platforms and portals designed to handle complex logic, custom workflows, and dynamic user data</p>
         </div>
 
         <div class="service-card">
-        <div class="service-icon">🔗</div>
-        <h3>API Integrations</h3>
-        <p>Robust RESTful API connections, third-party service integrations (monetization, analytics, social feeds), and backend synchronization</p>
+          <div class="service-icon">🔗</div>
+          <h3>API & Backend Integrations</h3>
+          <p>Robust RESTful API connections, third-party service integrations (monetization, analytics, social feeds), and backend synchronization</p>
         </div>
 
         <div class="service-card">
-        <div class="service-icon">🚀</div>
-        <h3>MVP Development</h3>
-        <p>Rapid prototyping and production-ready minimum viable products designed to help founders and creators launch faster and validate early</p>
+          <div class="service-icon">🚀</div>
+          <h3>MVP Development</h3>
+          <p>Rapid prototyping and production-ready minimum viable products designed to help founders and creators launch faster and validate early</p>
         </div>
 
         <div class="service-card">
-        <div class="service-icon">🎨</div>
-        <h3>UI/UX & Product Design</h3>
-        <p>Modern user interfaces and intuitive interaction flows designed to improve usability, engagement, and user retention</p>
+          <div class="service-icon">🎨</div>
+          <h3>Product Design & UX</h3>
+          <p>Modern user interfaces and intuitive interaction flows designed to improve usability, engagement, and user retention</p>
         </div>
-    </div>
+      </div>
     </section>
 
+    <!-- SECTION 3: Web Client Work -->
     <section id="web-portfolio" class="portfolio-section">
-      <h2>Client Websites & Digital Experiences</h2>
+      <div class="section-header">
+        <h2>Client Websites & Digital Experiences</h2>
+      </div>
+      
       <div class="portfolio-grid">
-
         <article class="portfolio-card">
           <div class="card-content">
             <span class="category">Hospitality / Luxury</span>
@@ -150,7 +159,7 @@
           <div class="card-content">
             <span class="category">Entertainment / Media</span>
             <h3>Gifted Talents</h3>
-            <p>Portfolio platform built for a celebrity photographer across Philadelphia and Atlanta, featuring auto-synced social feeds</p>
+            <p>High-performance digital portfolio featuring social integrations designed to showcase photography, videography, and creative content across web and social channels</p>
             <div class="tags">
               <span>API Integration</span>
               <span>Portfolio Layout</span>
@@ -184,57 +193,192 @@
             <a href="https://lvillelabs.github.io/elegantdesigns.bychris" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
           </div>
         </article>
-
       </div>
-      
-    <!-- Tech Stack Trust Bar -->
-    <div class="tech-trust-bar">
+
+      <!-- Testimonial Block -->
+      <div class="testimonial-section">
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <blockquote class="testimonial-text">
+            Lville Labs transformed our vision into a modern, responsive website that exceeded our expectations.
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <span class="author-name">Lifestyle Villas</span>
+              <span class="author-role">Luxury Property Rentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Why Us -->
+    <section class="why-us-section">
+      <div class="why-us-container">
+        <div class="why-us-header">
+          <span class="badge">The Advantage</span>
+          <h2>Why Lville Labs</h2>
+          <p>High-performance engineering paired with direct, transparent product strategy</p>
+        </div>
+        
+        <div class="why-us-list">
+          <div class="why-item">
+            <div class="why-icon">✦</div>
+            <div>
+              <h3>Production-Ready Engineering</h3>
+              <p>Scalable, secure code built to strict production standards from day one</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">✦</div>
+            <div>
+              <h3>Mobile-First & Cross-Platform</h3>
+              <p>Premium mobile experiences across iOS and Android through modern cross-platform architecture</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">✦</div>
+            <div>
+              <h3>End-to-End Ownership</h3>
+              <p>From initial scope and UI design to App Store deployment and ongoing updates</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">✦</div>
+            <div>
+              <h3>Direct Founder Collaboration</h3>
+              <p>Fast communication and product decisions directly with the engineer building your app</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Development Process -->
+    <section id="process" class="process-section">
+      <div class="section-header">
+        <span class="badge">Our Process</span>
+        <h2>How We Build</h2>
+        <p>A disciplined, product-focused methodology engineered to move software from concept to production-ready deployment</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step-number">01</div>
+          <h3>Discovery</h3>
+          <p>Architecture planning, technical feasibility mapping, target user profiling, and scoping project milestones</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">02</div>
+          <h3>Design</h3>
+          <p>High-fidelity UI/UX, interactive wireframing, component design systems, and rapid prototype validation</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">03</div>
+          <h3>Development</h3>
+          <p>Cross-platform production engineering, clean modular codebases, state management, and custom backend APIs</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">04</div>
+          <h3>Testing</h3>
+          <p>Rigorous multi-device QA testing, cross-platform performance profiling, security audits, and frame-rate optimization</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">05</div>
+          <h3>Launch</h3>
+          <p>Continuous Integration (CI/CD) pipelines, App Store & Google Play deployments, and server infrastructure provisioning</p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">06</div>
+          <h3>Optimization</h3>
+          <p>Post-launch telemetry, user retention analytics, performance tuning, and feature iteration cycles</p>
+        </div>
+      </div>
+
+      <!-- Tech Stack Trust Bar -->
+      <div class="tech-trust-bar">
         <span>Powered By:</span>
         <div class="tech-tags">
-        <span>Flutter</span>
-        <span>Firebase</span>
-        <span>iOS & Android</span>
-        <span>Google AdMob</span>
-        <span>Node.js</span>
-        <span>REST APIs</span>
-        <span>Git</span>
+          <span>Flutter</span>
+          <span>Firebase</span>
+          <span>iOS & Android</span>
+          <span>Google AdMob</span>
+          <span>Node.js</span>
+          <span>REST APIs</span>
+          <span>Git</span>
         </div>
-    </div>
+      </div>
     </section>
-    
 
+    <!-- SECTION 6: About -->
     <section id="about" class="about">
       <h2>About Lville Labs</h2>
-      <p>Lville Labs LLC is a software development studio specializing in cross-platform mobile app engineering, custom web platforms, and tailored digital solutions for creators, organizations, and emerging products. From concept to deployment, we combine clean architectural design with production-ready code to deliver modern technology built for performance, scalability, and seamless user experiences.</p>
+      <p class="about-lead">Lville Labs is a product-focused software studio creating mobile applications, websites, and digital platforms for creators, organizations, and emerging brands. We combine product strategy, modern engineering, and thoughtful design to transform ideas into scalable technology.</p>
+      
       <!-- Trust Statistics Grid -->
-    <div class="stats-grid">
-      <div class="stat-card">
-        <h3>Published Applications</h3>
-        <p>App Store & Google Play Deployments</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Published Applications</h3>
+          <p>App Store & Google Play Deployments</p>
+        </div>
+        <div class="stat-card">
+          <h3>Cross-Platform</h3>
+          <p>Unified iOS, Android & Web Codebases</p>
+        </div>
+        <div class="stat-card">
+          <h3>Full Product Lifecycle</h3>
+          <p>From UI/UX Prototype to Production</p>
+        </div>
       </div>
-      <div class="stat-card">
-        <h3>Cross-Platform</h3>
-        <p>Unified iOS, Android & Web Codebases</p>
+
+      <div class="stats-banner">
+        <div class="stat-item">
+          <span class="stat-number">1+</span>
+          <span class="stat-label">Published App</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Client Websites</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Custom Code</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">Enterprise</span>
+          <span class="stat-label">Software Background</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <h3>Full Product Lifecycle</h3>
-        <p>From UI/UX Prototype to Production</p>
+
+      <p class="founder-bio">Founded by Lauren James, a Product Owner and Software Engineer with experience delivering enterprise-scale technology solutions and building modern digital products for businesses, creators, and organizations</p>
+
+      <div class="founder-photo-container">
+        <img src="assets/lauren-james.PNG" alt="Lauren James, Founder & Lead Software Engineer at Lville Labs" class="founder-photo">
+        <span class="founder-caption">Lauren James — Founder & Product Engineer</span>
       </div>
-    </div>
-  </div>
-  <br><p>Founded by Lauren James, a Product Owner and Software Engineer with experience delivering enterprise-scale technology solutions and building modern digital products for businesses, creators, and organizations</p>
-       <br> <div class="founder-photo-container">
-      <img src="assets/lauren-james.PNG" alt="Lauren James, Founder & Lead Software Engineer at Lville Labs" class="founder-photo">
-      <span class="founder-caption">Lauren James — Founder & Lead Engineer</span>
-    </div>
     </section>
 
+    <!-- SECTION 7: Contact -->
     <section id="contact" class="contact">
       <h2>Get in Touch</h2>
-      <p>Have an idea for an app, platform, or digital product? <br>Bring your vision from concept to launch with Lville Labs.</p>
-      <br>
-      <p>Email: <a href="mailto:info@lvillelabs.com">info@lvillelabs.com</a></p>
-      <p>Phone: +1 (424) 766-5560</p>
+      <p>Have an idea for an app, platform, or digital product? Bring your vision from concept to launch with Lville Labs</p>
+      
+      <div class="contact-methods">
+        <p>Email: <a href="mailto:info@lvillelabs.com">info@lvillelabs.com</a></p>
+        <p>Phone: +1 (424) 766-5560</p>
+      </div>
+      
       <!-- Social Icon Badges -->
       <div class="social-badges">
         <a href="https://instagram.com/lvillelabs" target="_blank" rel="noopener" aria-label="Instagram">
@@ -246,8 +390,9 @@
       </div>
     </section>
   </main>
+
   <footer>
-    &copy; 2026 Lville Labs LLC. All rights reserved.
+    &copy; 2026 Lville Labs LLC. All rights reserved
   </footer>
 
   <script src="script.js"></script>
