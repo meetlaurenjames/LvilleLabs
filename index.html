@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lville Labs</title>
+  <title>Lville Labs | Mobile Applications & Custom Web Solutions</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -11,6 +11,8 @@
   <header>
     <img src="assets/logo.jpg" alt="Lville Labs Logo" class="logo">
     <nav>
+      <a href="#featured">Featured App</a>
+      <a href="#web-portfolio">Client Work</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -18,20 +20,124 @@
 
   <main>
     <section class="hero">
-      <h1>Building Mobile Experiences</h1>
-      <p>We create apps and solutions that users love and investors admire.</p>
-      <h2>Our Products</h2>
-      <h3>KeyStorm: Typing Game (JUST LAUNCHED!)</h3>
-      <a href="keystorm/index.html" style="display: inline-block; margin-bottom: 20px;">
-        <!-- Added max-width and height auto to keep the icon perfectly sized -->
-        <img src="assets/keystormlogo.PNG" alt="KeyStorm Logo" class="keyStormlogo" style="max-width: 160px; height: auto; display: block; margin: 0 auto;">
-      </a><BR>
+    <img src="assets/lvillelabslogo.png" alt="Lville Labs Logo">
+      <h1>Building Mobile & Web Experiences</h1>
+      <p>We craft engaging mobile applications and modern, custom websites designed to perform.</p>
       <a href="#contact" class="cta">Contact Us</a>
+    </section>
+
+    <!-- SECTION 1: Featured Flagship App with Gameplay Video -->
+    <section id="featured" class="portfolio-section featured-app-section">
+      <div class="featured-header">
+        <span class="badge flagship-badge">Just Launched</span>
+        <h2>Featured Mobile App</h2>
+      </div>
+
+      <div class="app-showcase-card">
+        <!-- App Details Column -->
+        <div class="app-details">
+          <div class="app-title-group">
+            <a href="keystorm/index.html" class="app-icon-link">
+              <img src="assets/keystormlogo.PNG" alt="KeyStorm App Icon" class="app-icon">
+            </a>
+            <div>
+              <h3>KeyStorm: Typing Game</h3>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>iOS & Android</span>
+                <span>Mobile Gaming</span>
+              </div>
+            </div>
+          </div>
+
+          <p>An action-packed typing game featuring accuracy tracking, daily challenges, and real-time skill scoring.</p>
+
+          <!-- Store Badges -->
+          <div class="download-badges">
+            <a href="https://apps.apple.com/app/id6774340946" target="_blank" rel="noopener">
+              <img src="assets/appstore-badge.png" alt="Download KeyStorm on the App Store">
+            </a> 
+            <a href="https://play.google.com/store/apps/details?id=com.lvillelabs.keystorm" target="_blank" rel="noopener">
+              <img src="assets/googleplay-badge.png" alt="Get KeyStorm on Google Play">
+            </a>
+          </div>
+
+          <a href="keystorm/index.html" class="link-btn">View App Details &rarr;</a>
+        </div>
+
+        <!-- Video Gameplay Preview Column -->
+        <div class="app-preview-container">
+          <video autoplay loop muted playsinline class="app-preview-video">
+            <source src="assets/apppreview.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Web Client Work -->
+    <section id="web-portfolio" class="portfolio-section">
+      <h2>Web Development & Client Work</h2>
+      <div class="portfolio-grid">
+
+        <article class="portfolio-card">
+          <div class="card-content">
+            <span class="category">Hospitality / Luxury</span>
+            <h3>Lifestyle Villas</h3>
+            <p>Luxury vacation rental platform featuring immersive video walkthroughs, property showcases, and direct reservation inquiries.</p>
+            <div class="tags">
+              <span>Video Integration</span>
+              <span>Responsive UI</span>
+            </div>
+            <a href="https://lvillelabs.github.io/lifestylevillas" target="_blank" rel="noopener" class="card-link">Visit Website &rarr;</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="card-content">
+            <span class="category">Entertainment / Media</span>
+            <h3>Gifted Talents</h3>
+            <p>Portfolio platform built for a celebrity photographer across Philadelphia and Atlanta, featuring auto-synced social feeds.</p>
+            <div class="tags">
+              <span>API Integration</span>
+              <span>Portfolio Layout</span>
+            </div>
+            <a href="https://lvillelabs.github.io/giftedtalents" target="_blank" rel="noopener" class="card-link">Visit Website &rarr;</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="card-content">
+            <span class="category">Community / Organization</span>
+            <h3>D’Antignac St. Church of Christ</h3>
+            <p>Comprehensive church organization website providing service schedules, online study access, ministry directories, and community outreach details.</p>
+            <div class="tags">
+              <span>Information Architecture</span>
+              <span>Community Hub</span>
+            </div>
+            <a href="https://lvillelabs.github.io/dantignac.coc/" target="_blank" rel="noopener" class="card-link">Visit Website &rarr;</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="card-content">
+            <span class="category">Commercial Services</span>
+            <h3>Elegant Designs by Chris</h3>
+            <p>Custom commercial service site built to establish brand presence, highlight key services, and facilitate direct client inquiries.</p>
+            <div class="tags">
+              <span>Brand Web Design</span>
+              <span>Lead Capture</span>
+            </div>
+            <a href="https://lvillelabs.github.io/elegantdesignsbychris" target="_blank" rel="noopener" class="card-link">Visit Website &rarr;</a>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section id="about" class="about">
       <h2>About Lville Labs</h2>
-      <p>Lville Labs specializes in mobile applications, digital products, and innovative technology solutions.</p>
+      <p>Lville Labs specializes in cross-platform mobile applications, custom website development, and digital technology solutions tailored to businesses and high-profile clients.</p>
     </section>
 
     <section id="contact" class="contact">
@@ -42,7 +148,7 @@
   </main>
 
   <footer>
-    &copy; 2026 Lville Labs. All rights reserved.
+    &copy; 2026 Lville Labs LLC. All rights reserved.
   </footer>
 
   <script src="script.js"></script>
