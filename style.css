@@ -37,17 +37,29 @@ header nav a:hover {
   color: #ff3e3e; 
 }
 
+/* Primary Brand Logo (Header) */
 .logo {
   height: 50px;
   width: auto;  
   object-fit: contain;
+  display: block;
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section & Brand Display --- */
 .hero {
   text-align: center;
-  padding: 10vh 5%;
+  padding: 8vh 5%;
   animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsive constraints for hero brand logo */
+.hero img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1.5rem auto;
 }
 
 .hero h1 { 
@@ -75,6 +87,36 @@ header nav a:hover {
 
 .cta:hover { 
   background: #e02d2d; 
+}
+
+/* --- Sponsor & Partnership Branding --- */
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.sponsor-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.05em;
+}
+
+.sponsor-logo {
+  height: 36px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.sponsor-logo:hover {
+  opacity: 1;
 }
 
 /* --- General Section Formatting --- */
@@ -111,7 +153,7 @@ footer {
   padding: 40px 20px;
   max-width: 1100px;
   margin: 0 auto;
-  text-align: left; /* Aligns card content left for better readability */
+  text-align: left;
 }
 
 .portfolio-section h2 {
@@ -278,15 +320,37 @@ footer {
   display: block;
 }
 
-/* --- Consolidated Mobile & Tablet Responsive Tweaks --- */
+/* --- Mobile & Tablet Responsive Adjustments --- */
 @media (max-width: 768px) {
+  header {
+    padding: 0.8rem 4%;
+  }
+
   header nav a {
     margin-left: 0.8rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    height: 38px;
+  }
+
+  .hero {
+    padding: 6vh 4%;
+  }
+
+  /* Keeps hero logo crisp and contained on mobile viewports */
+  .hero img {
+    max-width: 180px;
+    margin-bottom: 1rem;
   }
 
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
   }
 
   .app-showcase-card {
@@ -325,9 +389,13 @@ footer {
     margin-top: 10px;
   }
 
-  /* Scaled video player for small mobile viewports */
   .app-preview-video {
     max-width: 160px;
     max-height: 320px;
+  }
+
+  .sponsor-container {
+    flex-direction: column;
+    gap: 6px;
   }
 }
